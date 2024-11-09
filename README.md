@@ -2,7 +2,8 @@
 - The inferred purpose of this takehome is to prepare data to predict velocity from SDF.
 
 ## Deliverable
-- The deliverables (3 data sets) are generated using 01_Data_Preparation_and_EDA.ipynb
+- The main deliverable is the notebook. It produces 3 datasets.
+- The 3 data sets are generated using 01_Data_Preparation_and_EDA.ipynb
 - For a non train/test split, use prepared_tensor_data.pt
 - For a train/test split, use the respective files in the data folder. 
     - train data has input headers - (x,y,sdf)
