@@ -14,9 +14,9 @@
 - Pytorch Geometric is discussed a lot in the planned approach, but it's actually not used because it's not needed. Airfrans' Simulation object was enough to get the data in the right headers and into PyTorch tensors.
 - Only 50 airfoils were prepared due to RAM restrictions on my colab (dying around 500), but the code will support the whole set so long as the environment's RAM does.
     - Look in "Data preparation" section in 01_Data_Preparation.ipynb to change the value of SIMS constant, 1000 being the max.
-- the prepared data is saved as tensors as that's the most convienient for a pytorch model
+- The prepared data is saved as tensors as that's the most convienient for a pytorch model
 - Tensors are not batched because they're different sizes. The batching method depends on the model requirements using said data.
-
+- It's stated several times in the notebook that the x,y,sdf,x_v,y_v are 'features' - this is an misspeak. x,y,sdf are the features, x_v and y_v are the targets, and all 5 are elements.
 
 # Initial design choices
 Look in thought_stream.pdf for: 
